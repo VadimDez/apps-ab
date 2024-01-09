@@ -1,5 +1,5 @@
 integrationServer:
-  baseImage: cp.icr.io/cp/appc/ace-server-prod@sha256:1753d66293e51d8453acceb5194a8816fd9010caec7c770d07e6623b10fd3976
+  baseImage: cp.icr.io/cp/appc/ace-server-prod@sha256:92692cc01452f9cbe5075c737b850833516bccf7845f2f40c9bfdd160edbaa38
   project:
     - createcustomer
     - createcustomerJava
