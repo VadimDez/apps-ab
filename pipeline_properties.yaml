@@ -1,0 +1,19 @@
+integrationServer:
+  baseImage: cp.icr.io/cp/appc/ace-server-prod@sha256:1753d66293e51d8453acceb5194a8816fd9010caec7c770d07e6623b10fd3976
+  project:
+    - createcustomer
+    - createcustomerJava
+  applicationName: createcustomerrestcallingws
+  releaseName: create-customer-details-rest
+  license:
+    accept: true
+    license: L-UTKS-P46KK2
+    use: AppConnectEnterpriseNonProductionFREE
+  service:
+    endpointType: http
+  version: 12.0.10.0-r1-lts
+  configurations:
+    serverconf:
+      - create-customer-serverconf.yaml
+    policyproject:
+      - create-customer-policy
